@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--空白行-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4" />
+
+    <!--信息行******照片墙-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="照片墙"
+            android:textSize="24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon"
+                android:layout_marginRight="5dp"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon"
+                android:layout_marginRight="5dp"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--空白行-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4" />
+
+    <!--信息行******个性签名-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="签名"
+            android:textSize="24dp"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="To be or not to be,that's a question."
+            android:textSize="20dp"
+            android:textCursorDrawable="@null"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--空白行-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4" />
+
+    <!--信息行******姓名-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/per_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="姓名 "
+            android:textSize="24dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="王二麻子" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--信息行******年龄-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/per_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="年龄"
+            android:textSize="24dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="66"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--信息行******生日-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="生日"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--空白行-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4" />
+
+    <!--信息行******昵称-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/per_pickName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="昵称"
+            android:textSize="24dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="莫菲特" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--信息行******性别-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/per_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="性别"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_marginRight="20dp"
+                    android:text="男"
+                    android:onClick="onClickSex"
+                    />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickSex"
+                    android:text="女" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--信息行******故乡-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/per_School"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="故乡"
+            android:textSize="24dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="浙江绍兴"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--信息行******所在地-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="所在地"
+            android:textSize="24dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="浙江绍兴"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            />
+    </TableRow>
+
+    <!--空白行-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="完成修改"
+        />
+</TableLayout>
